@@ -9,6 +9,7 @@ from matplotlib.ticker import PercentFormatter
 import os
 import tensorflow as tf
 from keras.datasets import mnist
+import keras
 
 img_rows, img_cols = 400, 400 # numero de pixeles despues de resize
 train_data = pd.read_csv('/kaggle/input/aptos2019-blindness-detection/train.csv')
@@ -31,9 +32,6 @@ np.random.seed(seed) # Se establece la semilla
 tf.random.set_seed(seed)
 num_classes = 5 # 5 clases
 
-len(train_images)
-
-import keras
 train_diagnosis = keras.utils.to_categorical(np.array(train_diagnosis), num_classes)
 
 train_diagnosis[0]
