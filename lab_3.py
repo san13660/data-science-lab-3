@@ -1,4 +1,8 @@
 # Lab 3 - Data Science
+# Christopher Sandoval
+# Fernanda Estrada
+# Luis Delgado
+# Estuardo Diaz
 
 import numpy as np
 import pandas as pd
